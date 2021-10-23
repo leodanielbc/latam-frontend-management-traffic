@@ -1,27 +1,24 @@
-# FrontendAdvLatam
+<h1>Challenge: Aplicación web para registro de autos y validación de hoy no circula.</h1>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.3.
+# Description
+La aplicacion esta desarrollada en:
+- Angular 10
 
-## Development server
+## Installation
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+```bash
+$ npm install
+```
 
-## Code scaffolding
+## Running the app
+Para ejecutar el proyecto:
+```bash
+$ ng serve
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+ #Ir al navegador
+ http://localhost:4200/
+```
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Ejecute `ng build` para construir el proyecto. El ejecutable de almacenara en el directorio `dist/`. Utilice la bandera `--prod` para deployar a producción.

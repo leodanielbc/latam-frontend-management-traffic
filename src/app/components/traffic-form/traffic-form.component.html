@@ -1,0 +1,34 @@
+<form [formGroup]="consultForm" novalidate (ngSubmit)="onSubmit($event)">
+  <mat-card class="shipping-card">
+    <mat-card-header>
+      <mat-card-title>Consulta de Circulación</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <div class="row">
+        <div class="col">
+          <mat-form-field class="full-width">
+            <input matInput placeholder="Placa" formControlName="placa">
+            <mat-error *ngIf="consultForm.controls['placa'].hasError('required')">
+              Placa is <strong>required</strong>
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="col">
+          <mat-form-field class="full-width">
+            <input type="date" matInput placeholder="Fecha" formControlName="fecha">
+            <mat-error *ngIf="consultForm.controls['fecha'].hasError('required')">
+              Fecha is <strong>required</strong>
+            </mat-error>
+          </mat-form-field>
+        </div>
+      </div>
+    </mat-card-content>
+    <mat-card-actions>
+      <button [disabled]="consultForm.invalid" mat-raised-button color="primary" type="submit">Submit</button>
+      <div *ngIf="checkRegister === true">
+        El vehiculo no se encuentra registrado,
+        <a mat-raised-button color="warn" type="button" routerLink="/car" >Registar</a>
+      </div>
+    </mat-card-actions>
+  </mat-card>
+</form>
